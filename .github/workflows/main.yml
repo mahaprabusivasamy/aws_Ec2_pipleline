@@ -12,7 +12,7 @@ jobs:
         run: echo "tested successfully"
 
       - name : s3 bucket uploader
-        uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@main
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
