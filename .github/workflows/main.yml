@@ -1,0 +1,13 @@
+name: aws ec2
+run-name: ${{github.actor}} is testing the aws repo
+on: [push]
+jobs:
+  aws-ec2-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name : Checkout Repository
+        uses: actions/checkout@v4
+
+      - name : testing
+        run: echo"tested successfully"
+        
